@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Overlay Website</title>
+  <style>
+    #overlay-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    #website-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    #black-strip-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px; 
+      background-color: #000;
+      z-index: 1;
+      font-family: 'Montserrat', sans-serif; 
+      color: #fff; 
+      padding: 20px; 
+      text-align: center; 
+    }
+
+    #black-strip-top p {
+      font-size: 18px; 
+      font-weight: bold; 
+    }
+
+    #black-strip-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70px; 
+      background-color: #000;
+      z-index: 1;
+      font-family: 'Montserrat', sans-serif; 
+      color: #fff; 
+      padding: 20px; 
+      text-align: center; 
+    }
+
+    #black-strip-bottom p {
+      font-size: 18px; 
+      font-weight: bold; 
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay-container">
+    <iframe id="website-iframe" src="https://multimodalart-stable-video-diffusion.hf.space" frameborder="0" width="100%" height="100%"></iframe>
+    <div id="black-strip-top">
+      <p>Simply upload your image, select the desired aspect ratio and settings from the advanced section,</p>
+      <p>and then wait for a short time. Our AI will automatically generate the output in video form.</p>
+    </div>
+    <div id="black-strip-bottom">
+      <p>IMMORTAL 06</p>
+    </div>
+  </div>
+</body>
+</html>
